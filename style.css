@@ -1,0 +1,1333 @@
+
+html{
+  width: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand {
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  color: var(--bs-navbar-brand-color);
+  white-space: nowrap;
+}
+
+.navbar-nav {
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: var(--bs-navbar-active-color);
+}
+.navbar-nav .dropdown-menu {
+  position: static;
+}
+
+.navbar-collapse {
+  flex-basis: 100%; 
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fcfcfc;
+  background-color: #ffffff;
+  z-index: 999999;
+}
+
+#mainNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background-color: #000;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+.navbar-expand {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+.navbar-expand .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.navbar-expand .navbar-nav-scroll {
+  overflow: visible;
+}
+.navbar-expand .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+.navbar-expand .navbar-toggler {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-brand {
+    color: #fff;
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-collapse {
+    background-color: #000000;
+  }
+}
+
+.logo{
+  width: 56px;
+  height: 45px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Hero Section */
+.section-home {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame-19 {
+  padding: 372px 70px 212px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 380px;
+  position: relative;
+}
+.salut-eu-sunt-alice {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 50px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  opacity: 0.78;
+  position: relative;
+  align-self: stretch;
+}
+.instructor-personal-de-fitness {
+  color: var(--paragraph-color, #3f749c);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-18 {
+  width: 100%;
+  height: 882px;
+  position: absolute;
+  align-items: center;
+  justify-content: center; 
+  left: .5%;
+  bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.personal-trainer {
+  color: var(--title, #94d5fa);
+  text-align: center;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 6em;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+  position: absolute;
+  top: 200px;
+  /* mix-blend-mode:hard-light; */
+  /* z-index: 9; */
+}
+
+ /* .line-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   margin-top: -1.5px; 
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #626262;
+  border-width: 1.5px 0 0 0;
+  width: 463px;
+  height: 0px;
+  position: absolute;
+  left: 44%;
+  top: 300px;
+  z-index: 3;
+  transform-origin: 0 0;
+  transform: rotate(-42.987deg) scale(1, 1);
+}  */
+
+.image-4 {
+  width: 629px;
+  height: 628px;
+  position: absolute;
+  left: 17%;
+  top: 254px;
+  object-fit: contain;
+  z-index: 1;
+  mix-blend-mode:lighten;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Why need a personal trainer */
+.section-why {
+  padding: 70px 126px 191px 126px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 969px;
+  position: relative;
+}
+.de-ce-ai-nevoie-de-un-antrenor-personal {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  position: relative;
+}
+.bubbles{
+  width: 90%;
+  position: relative;
+  display: grid;
+  left: 5%;
+  grid-template-columns: repeat(3, 25rem);
+  align-content: center;
+  justify-content: center;
+}
+.frame-23 {
+  padding: 16px 60px 56px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 229px;
+  position: relative;
+}
+.frame-25 {
+  padding: 36px 150px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 229px;
+  position: relative;
+}
+.frame-28 {
+  top: -20%;
+  padding: 36px 150px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 229px;
+  position: relative;
+}
+.motiva-ie-continu {
+  top: 45%;
+  left: -5%;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  position: relative;
+  width: 98px;
+}
+.varietate{
+  top: 65%;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  position: relative;
+  width: 98px;
+}
+.tehnica-corecta{
+  top: 50%;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  position: relative;
+  width: 98px;
+}
+.responsabilitate{
+  top: 54%;
+  left: -45%;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  position: relative;
+  width: 98px;
+}
+.component-2 {
+  flex-shrink: 0;
+  width: 254px;
+  height: 254px;
+  position: absolute;
+  left: calc(50% - 127.5px);
+  top: calc(50% - 128px);
+  filter: blur(2.4px);
+  mix-blend-mode: lighten;
+}
+.group-1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.component-5 {
+  top: 10%;
+  flex-shrink: 0;
+  width: 206px;
+  height: 206px;
+  position: relative;
+  filter: blur(2.4px);
+  mix-blend-mode: lighten;
+}
+
+.component-3 {
+  flex-shrink: 0;
+  width: 158px;
+  height: 158px;
+  position: relative;
+  filter: blur(2.4px);
+  mix-blend-mode: lighten;
+}
+.component-52 {
+  flex-shrink: 0;
+  width: 220px;
+  height: 219px;
+  position: relative;
+  filter: blur(2.4px);
+  mix-blend-mode: lighten;
+}
+
+.frame-27 {
+  top: 35%;
+  padding: 26px 65px 56px 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 229px;
+  position: relative;
+}
+.frame-26 {
+  top: -10%;
+  padding: 6px 5px 116px 95px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 229px;
+  position: relative;
+}
+.group-15 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.component-4 {
+  flex-shrink: 0;
+  width: 158px;
+  height: 158px;
+  position: relative;
+  filter: blur(2.4px);
+  mix-blend-mode: lighten;
+}
+.group-16 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+/* About Me Section */
+.about-me{
+  background-color: #000;
+  width: 100%;
+}
+.section-about-me {
+  background: #f6f6f6;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 10%;
+  width: 80%;
+  height: 524px;
+  position: relative;
+  overflow: hidden;
+}
+.description {
+  padding: 100px 0px 0px 85px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: top;
+  width: 50%;
+  height: 538px;
+  position: relative;
+}
+.despre-mine2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  position: relative;
+}
+.sunt-antrenor-personal-dedicat-pasionat-de-fitness-i-s-n-tate-cred-n-abord-ri-personalizate-adapt-nd-fiecare-program-la-nevoile-individuale-ale-clien-ilor-mei-scopul-meu-este-s-te-motivez-s-te-inspir-i-s-te-ghidez-pe-drumul-c-tre-un-stil-de-via-mai-s-n-tos-i-mai-activ-hai-s-lucr-m-mpreun-pentru-a-i-transforma-visurile-n-realitate {
+  color: var(--paragraph-color, #002c7f);
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 1.1em;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  opacity: 0.7;
+  position: relative;
+  width: 80%;
+}
+.image-6 {
+  width: 50%;
+  height: 624px;
+  position: relative;
+  object-fit: cover;
+}
+/* Services Section */
+
+.section-services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+.image-5 {
+  align-self: stretch;
+  height: 950px;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  opacity: 0.1;
+  justify-content: center;
+}
+.exerci-ii2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  position: absolute;
+  left: 15%;
+  top: 138px;
+}
+.frame-10 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 65px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: absolute;
+  left: 15%;
+  top: 300px;
+}
+.frame-5 {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #3f749c;
+  border-width: 1px;
+  padding: 14px 21px 14px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 313px;
+  position: relative;
+  overflow: hidden;
+}
+.image-7 {
+  align-self: stretch;
+  height: 339px;
+  position: relative;
+  object-fit: cover;
+}
+.fitness {
+  color: var(--cart-title, #a4d8ff);
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-4 {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #3f749c;
+  border-width: 1px;
+  padding: 14px 42px 14px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 313px;
+  position: relative;
+  overflow: hidden;
+}
+.image-8 {
+  align-self: stretch;
+  height: 339px;
+  position: relative;
+  object-fit: cover;
+}
+.online-training {
+  color: var(--cart-title, #a4d8ff);
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-6 {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #3f749c;
+  border-width: 1px;
+  padding: 14px 21px 14px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 313px;
+  position: relative;
+  overflow: hidden;
+}
+.image-9 {
+  align-self: stretch;
+  height: 339px;
+  position: relative;
+  object-fit: cover;
+}
+.bodybuilding {
+  color: var(--cart-title, #a4d8ff);
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+/*  Healty Food */
+.banner{
+  background-color: #000;
+  width: 100%;
+  height: 140vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner .slider{
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  top: 20%;
+  left: calc(50% - 50px);
+  transform-style: preserve-3d;
+  transform: perspective(900px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+@keyframes autoRun{
+  from{
+    transform: perspective(900px)  rotateX(-16deg) rotateY(0deg);
+  }to{
+    transform: perspective(900px) rotateX(-16deg)  rotateY(360deg);
+  }
+}
+.banner .slider .item{
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: 
+        rotateY(calc( (var(--position) - 1) * ( 360 / var(--quantity)) *1deg))      
+        translateZ(550px);
+}
+.banner .slider .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner .text{
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  letter-spacing: 5px;
+  display: flex;
+  color: #d8f1ff;
+  z-index: 1;
+}
+.banner .text h1{
+  font-size: 6em;
+}
+a{
+  text-decoration: none;
+}
+/* Contact Section */
+.section-contact {
+  background-color: #000;
+  padding-top: 5%;
+  padding: 0px 229px 60px 229px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 245px;
+  row-gap: 94px;
+  width: 100%;
+  position: relative;
+}
+.contact2 {
+  color: #ffffff;
+  text-align: left;
+  justify-content: flex-start;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+}
+.contact3 {
+  padding: 24px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 29px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.clock {
+  color: #d8f1ff;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 34px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  flex-shrink: 0;
+  width: 34px;
+  height: 32px;
+  position: relative;
+  overflow: visible;
+}
+.luni-vineri-08-00-19-00 {
+  color: var(--cart-title, #a4d8ff);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+}
+.number {
+  color: #d8f1ff;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+._0721-670-499 {
+  color: var(--cart-title, #a4d8ff);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+}
+.address {
+  color: #d8f1ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 16px;
+  position: relative;
+  left: 4px;
+  top: -15px;
+  
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 32px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+.cluj-napoca-cluj {
+  color: var(--cart-title, #a4d8ff);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.bamboo-fitness-str-arge-5-cluj-napoca-400157 {
+  color: var(--cart-title, #a4d8ff);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.bamboo-fitness-str-arge-5-cluj-napoca-400157-span {
+  color: var(--cart-title, #a4d8ff);
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+}
+.bamboo-fitness-str-arge-5-cluj-napoca-400157-span2 {
+  color: var(--cart-title, #a4d8ff);
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  text-decoration: underline;
+}
+.menu2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 105px;
+  position: relative;
+}
+.meniu {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.acas2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.despre-mine3 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.exerci-ii3 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.contact4 {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-21 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+.button-instagram {
+  background: var(--button, #03355c);
+  border-radius: 100px;
+  padding: 22px 61px 22px 61px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 81px;
+  position: relative;
+}
+.frame-11 {
+  color: #d8f1ff;
+  width: 226px;
+  height: 32px;
+  position: relative;
+}
+.vector2 {
+  width: 14.16%;
+  height: 100%;
+  position: absolute;
+  right: 85.84%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.vasilescu-alice-pt {
+  color: var(--cart-title, #a4d8ff);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: absolute;
+  left: 49px;
+  top: 1px;
+}
+.button-tiktok {
+  background: var(--button, #03355c);
+  border-radius: 100px;
+  padding: 22px 61px 22px 61px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 81px;
+  position: relative;
+}
+.frame-12 {
+  color: #d8f1ff;
+  width: 226px;
+  height: 32px;
+  position: relative;
+}
+
+.vasilescu-alice-pt2 {
+  color: var(--cart-title, #a4d8ff);
+  text-align: left;
+  font-family: var(--paragraph-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--paragraph-font-size, 24px);
+  line-height: var(--paragraph-line-height, 120%);
+  letter-spacing: var(--paragraph-letter-spacing, -0.04em);
+  font-weight: var(--paragraph-font-weight, 400);
+  position: absolute;
+  top: 1px;
+  left: 49px;
+}
+
+/* Footer Section */
+.section-footer {
+  background-color: #000;
+  padding: 50px 129px 0px 129px;
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.black-white-modern-fitness-logo-1-12 {
+  flex-shrink: 0;
+  width: 81px;
+  height: 85px;
+  position: relative;
+  object-fit: cover;
+}
+.personal-trainer-vasilescu-alice-ioana {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  position: relative;
+}
+
+/* Animation  */
+.auto-show {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation {
+  from{
+    opacity: 0;
+    transform: translateY(100px) scale(0.5);
+  }to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media screen and (max-width: 1278px) {
+  .section-services .image-5{
+    height: max-content;
+  }
+  .personal-trainer{
+    font-size: 5em;
+  }
+  .salut-eu-sunt-alice{
+    font-size: 2.5em;
+  }
+  .instructor-personal-de-fitness{
+    font-size: 1em;
+  }
+  .image-4 {
+    width: 529px;
+    height: 526px;
+    left: 17%;
+    top: 254px;
+  }
+  .frame-19{
+    padding: 80px 10px 0px 0px;
+  }
+  .frame-18{
+    height: 550px;
+  }
+  .section-home{
+    height: 650px;
+  }
+  .hero-title{
+    justify-content: flex-end;
+    width: auto;
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 1138px) {
+  .section-services .image-5{
+    height: auto;
+  }
+  .section-about-me{
+    width: 70%;
+    height: auto;
+    left: 15%;
+  }
+  .section-about-me img{
+    width: auto;
+  }
+  .description{
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+  }
+  .de-ce-ai-nevoie-de-un-antrenor-personal{
+    font-size: 2em;
+  }
+  .bubbles{
+    width: 80%;
+    grid-template-columns: repeat(3, 20rem);
+  }
+}
+@media screen and (max-width: 1000px){
+  .personal-trainer{
+    font-size: 4em;
+  }
+  .salut-eu-sunt-alice{
+    font-size: 2em;
+  }
+  .image-4{
+    left: 13%;
+  }
+}
+@media screen and (max-width: 925px) {
+  .section-why {
+    padding: 91px 26px 191px 26px;
+    gap: 20px;
+    height: 1100px;
+  }
+  .bubbles{
+    grid-template-columns: repeat(2, 25rem);
+  }
+}  
+@media screen and (max-width: 830px) {
+  .section-services .image-5{
+    height: 1800px;
+  }
+  .section-why{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .de-ce-ai-nevoie-de-un-antrenor-personal{
+    font-size: 1.5em;
+  }
+  .personal-trainer{
+    font-size: 3.5em;
+  }
+  .image-4{
+    left: 5%;
+    width: 429px;
+    height: 426px;  
+    top: 234px;
+  }
+  .section-home{
+    padding-top: 150px;
+    height: 560px;
+  }
+}
+@media screen and (max-width: 756px) {
+   .section-contact{
+      padding: 0px 35px;
+   }
+   .image-6{
+     height: 400px;
+     width: 500px;
+   }
+   .description{
+    padding-left: 5%;
+   }
+   .bubbles{
+    grid-template-columns: repeat(2, 18rem);
+  }
+}
+@media screen and (max-width: 700px){
+  .personal-trainer{
+    font-size: 3em;
+  }
+  .salut-eu-sunt-alice{
+    font-size: 1.5em;
+  }
+  .instructor-personal-de-fitness{
+    font-size: .85em;
+  }
+  .frame-19{
+    padding-top: 100px;
+  }
+  .hero-title{
+    top: -55%;
+  }
+}
+@media screen and (max-width: 600px){
+  .personal-trainer{
+    font-size: 2.5em;
+  }
+  .image-4{
+    left:-5%;
+  }
+}
+@media screen and (max-width:595px) {
+  .section-why{
+    gap: 0px;
+    height: 1600px;
+  }
+  .bubbles{
+    display: flex;
+    flex-direction: column;
+  }
+  .frame-25 {
+    padding: 30px 10px 60px 270px;
+  }
+  .frame-26{
+    padding: 170px 10px 0px 240px;
+  }
+  .frame-27{
+    top: 15%;
+    padding: -25px 0px 0px 230px;
+  }
+  .frame-28{
+    padding: 0px 150px 0px 20px;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .responsabilitate{
+    top: 60%;
+    left: -55%; 
+  }
+}
+@media screen and (max-width: 504px){
+    .section-about-me{
+      width: 80%;
+      left: 10%;
+      height: 800px;
+    }
+    .despre-mine2{
+      font-size: 1.8em;
+      padding-bottom: 25px;
+    }
+    .description{
+      padding-top: 30px;
+      padding-bottom: 50px;
+      width: 350px; 
+      height: 400px;
+      font-size: .85em;
+    }
+    .banner{
+      height: 130vh;
+      padding-bottom: 5%;
+    }
+    .banner .slider{
+      width: 100px;
+      height: 100px;
+    }
+    .banner .text {
+      top: 35%;
+    }
+    .banner .text h1{
+      font-size: 2em;
+    }
+    .exerci-ii2{
+      font-size: 1.8em;
+    }
+    .contact2{
+      font-size: 1.8em;
+    }
+    .cluj-napoca-cluj{
+      font-size: 1.3em;
+    }
+    .bamboo-fitness-str-arge-5-cluj-napoca-400157-span{
+      font-size: .85em;
+      font-weight: 100;
+    }
+    .bamboo-fitness-str-arge-5-cluj-napoca-400157-span2{
+      font-size: .85em;
+      font-weight: 100;
+    }
+    .luni-vineri-08-00-19-00{
+      font-size: 1.3em;
+    }
+    ._0721-670-499{
+      font-size: 1.3em;
+    }
+    .acas2{
+      font-size: 1.3em;
+    }
+    .despre-mine3{
+      font-size: 1.3em;
+    }
+    .exerci-ii3{
+      font-size: 1.3em;
+    }
+    .contact4{
+      font-size: 1.3em;
+    }
+    .section-why{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .de-ce-ai-nevoie-de-un-antrenor-personal{
+      font-size: 1.5em;
+    }
+    .frame-10{
+      left: 1%;
+    }
+    .personal-trainer{
+      font-size: 2.2em;
+    }
+    .image-4{
+      width: 350px;
+      height: 400px;  
+      top: 214px;
+      left:-2%;
+    }
+    .section-home{
+      padding-top: 150px;
+      height: 460px;
+    }
+    .personal-trainer-vasilescu-alice-ioana{
+      font-size: 0.75em;
+    }
+    .section-footer{
+      gap: 0px;
+    }
+}
