@@ -1215,8 +1215,11 @@ a{
     display: flex;
     flex-direction: column;
   }
+  .frame-23 {
+    padding: 16px 10px 56px 10px;
+  }
   .frame-25 {
-    padding: 30px 10px 60px 270px;
+    padding: 30px 10px 60px 230px;
   }
   .frame-26{
     padding: 170px 10px 0px 240px;
@@ -1246,14 +1249,15 @@ a{
       padding-bottom: 25px;
     }
     .description{
-      padding-top: 30px;
-      padding-bottom: 50px;
+      justify-content: flex-start;
+      padding-top: 60px;
+      padding-bottom: 10px;
       width: 350px; 
       height: 400px;
       font-size: .85em;
     }
     .banner{
-      height: 130vh;
+      height: 120vh;
       padding-bottom: 5%;
     }
     .banner .slider{
@@ -1315,14 +1319,17 @@ a{
       font-size: 2.2em;
     }
     .image-4{
-      width: 350px;
-      height: 400px;  
+      width: 300px;
+      height: 350px;  
       top: 214px;
-      left:-2%;
+      left:-1%;
     }
     .section-home{
-      padding-top: 150px;
-      height: 460px;
+      padding-top: 200px;
+      height: 410px;
+    }
+    .hero-title{
+      top: -100%;
     }
     .personal-trainer-vasilescu-alice-ioana{
       font-size: 0.75em;
@@ -1330,4 +1337,12 @@ a{
     .section-footer{
       gap: 0px;
     }
+    .section-footer{
+      padding-top: 5%;
+    }
+}
+@media screen and (max-width: 450px){
+     .banner .text {
+      left: 24%;
+     }
 }
