@@ -1357,21 +1357,24 @@ a{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: -1.5px; 
         justify-content: center;
         align-items: center;
         border-style: solid;
         border-color: #626262;
         border-width: 1.5px 0 0 0;
-        width: 463px;
-        height: 0px;
+        width: 553px;
+        /* height: 0px; */
         position: absolute;
         left: 44%;
-        top: 200px;
-        z-index: 3;
+        top: 250px;
+        z-index: 3333;
         transform-origin: 0 0;
         transform: rotate(-42.987deg) scale(1, 1);
       } 
-  .hero-title{
-    right: -4%;
+      .section-footer{
+        padding-top: 18%;
+      }
+      .hero-title{
+        right: -5%;
+      }
 }
