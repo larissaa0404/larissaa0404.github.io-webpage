@@ -1343,15 +1343,15 @@ a{
 }
 @media screen and (max-width: 450px){
      .banner .text {
-      left: 24%;
+      left: 20%;
      }
      .description{
-      left: -7%;
+      left: -8.5%;
      }
      .image-6{
        display: block;
        margin: auto;
-       left: -5%;
+       left: -7.5%;
      }
       .line-1 {
         display: flex;
@@ -1367,9 +1367,11 @@ a{
         height: 0px;
         position: absolute;
         left: 44%;
-        top: 300px;
+        top: 200px;
         z-index: 3;
         transform-origin: 0 0;
         transform: rotate(-42.987deg) scale(1, 1);
       } 
+  .hero-title{
+    right: -4%;
 }
