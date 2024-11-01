@@ -1351,7 +1351,7 @@ a{
      .image-6{
        display: block;
        margin: auto;
-       left: -7.5%;
+       left: -8%;
      }
       .line-1 {
         display: flex;
@@ -1366,7 +1366,7 @@ a{
         /* height: 0px; */
         position: absolute;
         left: 44%;
-        top: 250px;
+        top: 270px;
         z-index: 3333;
         transform-origin: 0 0;
         transform: rotate(-42.987deg) scale(1, 1);
@@ -1375,6 +1375,6 @@ a{
         padding-top: 18%;
       }
       .hero-title{
-        right: -5%;
+        right: -7%;
       }
 }
