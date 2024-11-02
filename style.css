@@ -1011,7 +1011,7 @@ a{
 /* Footer Section */
 .section-footer {
   background-color: #000;
-  padding: 50px 129px 0px 129px;
+  padding: 90px 129px 0px 129px;
   display: flex;
   flex-direction: row;
   gap: 36px;
