@@ -1353,7 +1353,7 @@ a{
        margin: auto;
        left: -8%;
      }
-      .line-1 {
+/*       .line-1 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1363,14 +1363,14 @@ a{
         border-color: #626262;
         border-width: 1.5px 0 0 0;
         width: 553px;
-        /* height: 0px; */
+        /* height: 0px; 
         position: absolute;
         left: 44%;
         top: 270px;
         z-index: 3333;
         transform-origin: 0 0;
         transform: rotate(-42.987deg) scale(1, 1);
-      } 
+      }  */
       .section-footer{
         padding-top: 18%;
       }
